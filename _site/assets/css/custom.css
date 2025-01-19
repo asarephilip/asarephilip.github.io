@@ -3,4 +3,27 @@ Don't want to use sass and simply modify the stylesheet in the old css fashion?
 Just customize your theme here.
 ================================================== */
 
-body {}
+body {
+    background:#f0fafa;
+}
+
+.hero {
+    background: #80eaf1;
+    padding: 5rem 5rem;
+}
+
+.navigation-wrap {	
+   background:#e4f8fc;
+   border-bottom: 3px solid #e4f8fc;
+   margin-bottom: 50px;
+}
+
+.card-block{
+    padding: 7px 0 7px 7px;
+}
+
+.footer{
+    background: #d3f3f8;
+    width: 100%;
+    max-width: 100%;
+}
