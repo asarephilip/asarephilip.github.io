@@ -16,17 +16,17 @@
 <!-- custom CSS end-->
     
 {% if jekyll.environment == "production" %}       
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id={{site.ganalytics}}"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3C40M2BQB0"></script>
 <script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', '{{site.ganalytics}}');
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3C40M2BQB0');
 </script>
-{% endif %}
-   
 </head>   
+{% endif %}
     
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
 <body class="{{ layout }}">
@@ -102,14 +102,14 @@ gtag('config', '{{site.ganalytics}}');
 ================================================== -->    
 <footer class="footer container text-center">  
 
-  <!-- CREDITS BEGIN.
-  If you want to support my work, please donate to remove the credits. This helps me keep it up and running: https://www.wowthemes.net/donate/ 
+  <!-- CREDITS BEGIN.-->
+  <!-- If you want to support my work, please donate to remove the credits. This helps me keep it up and running: https://www.wowthemes.net/donate/ -->
   <div class="credits mx-auto text-center mb-3">
     <a class="hover-opacity font-weight-bold" href="https://bootstrapstarter.com/template-affiliates-bootstrap-jekyll/">
       <img src="{{site.baseurl}}/assets/images/credits.png" alt="powered by WowThemes">
     </a>
   </div>
-  CREDITS END -->
+  <!-- CREDITS END -->
 
   <ul class="p-0 mb-1 small">
     {% for item in site.data.menus.footermenu %}
