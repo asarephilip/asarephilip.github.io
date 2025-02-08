@@ -6,7 +6,8 @@ permalink: "/:title/"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
 author: Sal
-paginate: 30
+paginate: 6
+paginate_path: "/blog/page:num/"
 disqus: 'demowebsite'
 locale: en_us
 lang: en_us
@@ -43,9 +44,9 @@ authors:
 
 # Social
 social:
-  instagram: https://www.instagram.com/bootstrapstarter/
-  facebook: https://www.facebook.com/bootstrapstartercom-346329609045284
-  twitter: https://twitter.com/bstartercom
+  instagram: ""
+  facebook: ""
+  twitter: ""
 
 # Plugins
 plugins: 

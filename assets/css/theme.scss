@@ -30,13 +30,13 @@ body {
 .serif-font {
     font-family:PT Serif;
 }
-@media (max-width: 1366px) {
-    .container-xl, .container-lg, .container-md, .container-sm, .container {
-        width:90%;
-        max-width:90%;
-        padding:0 25px;
-    }
-}
+// @media (max-width: 1066px) {
+//     .container-xl, .container-lg, .container-md, .container-sm, .container {
+//         width:100%;
+//         max-width:100%;
+//         padding:0 25px;
+//     }
+// }
 main {min-height:500px;}
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, .navbar-light .navbar-brand, .text-dark, .dropdown-item {
     color: #000;
@@ -292,7 +292,7 @@ span.post-name a,span.post-read-more a:hover {
 	color:rgba(0,0,0,.8);
 }
 .article-post>*{
-    margin-bottom:1.5rem;
+    padding-bottom:1.5rem;
 }
 .article-post {
     font-size: 1.18em;
