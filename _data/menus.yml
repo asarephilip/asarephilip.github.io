@@ -4,17 +4,17 @@ topmenu:
 - title: Home
   url: ""
 
+- title: Services
+  url: ""
+
 - title: Courses
-  url: "about/"
+  url: ""
 
 - title: Blog
-  url: "about/"
-
-- title: About
-  url: "about/"
+  url: ""
 
 - title: Contact
-  url: "contact/"
+  url: ""
 
 # Footer Menu
 footermenu:
@@ -23,11 +23,7 @@ footermenu:
   url: ""
 
 - title: Privacy Policy
-  url: "privacy-policy/"
+  url: ""
 
 - title: Contact
-  url: "contact/"
-
-- title: Download
-  url: https://bootstrapstarter.com/template-affiliates-bootstrap-jekyll/  
-  external: true
+  url: ""

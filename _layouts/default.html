@@ -49,7 +49,6 @@
 
           <div class="d-flex align-items-center">
             
-            <span class="ml-3 text-muted small">Follow</span>
 
             <a class="d-inline-block social-icon" target="_blank" href="{{site.social.twitter}}">
               <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
@@ -91,27 +90,18 @@
       </nav>
     </div>  
 
+<hr style="margin: 0 0 15px 0; padding: 0;">
     
 <!-- Container
 ================================================== -->    
-<main class="container">   
+<main class="main-container container">   
       {{ content }}  
 </main>
 
 <!-- Footer
 ================================================== -->    
 <footer class="footer container text-center">  
-
-  <!-- CREDITS BEGIN.-->
-  <!-- If you want to support my work, please donate to remove the credits. This helps me keep it up and running: https://www.wowthemes.net/donate/ -->
-  <div class="credits mx-auto text-center mb-3">
-    <a class="hover-opacity font-weight-bold" href="https://bootstrapstarter.com/template-affiliates-bootstrap-jekyll/">
-      <img src="{{site.baseurl}}/assets/images/credits.png" alt="powered by WowThemes">
-    </a>
-  </div>
-  <!-- CREDITS END -->
-
-  <ul class="p-0 mb-1 small">
+  <ul class="p-0 small">
     {% for item in site.data.menus.footermenu %}
     <li>
       <a href="{% unless item.external %}{{site.baseurl}}/{% endunless %}{{item.url}}" alt="{{item.title}}">{{item.title}}</a>
@@ -119,8 +109,9 @@
     {% endfor %}
     </ul>
     <div class="copyright small">
-       Copyright © {{site.title}}. All rights reserved.
+       Copyright © Philip Boadu Asare. All rights reserved.
     </div>
+
 </footer>
 
 <!-- JavaScript

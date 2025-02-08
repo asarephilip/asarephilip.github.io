@@ -1,0 +1,39 @@
+---
+layout: default
+title: Blog
+permalink: "/blog/"
+comments: false
+---
+
+<!-- Blogs
+================================================== -->
+<section class="row">
+  {% for post in site.posts %}
+          <div class="col-md-4 mb-5">
+          {% include postbox.html %}
+          </div>
+  {% endfor %}
+  </div>
+</section>
+
+
+
+<!-- Posts List with Sidebar (except featured)
+================================================== -->
+<section class="row">
+  <div class="col-sm-12">
+    <div class="row">
+      {% for post in paginator.posts %}
+      <div class="col-md-6 mb-5">
+        {% include postbox.html %}
+      </div>
+      {% endfor %}
+    </div>
+    <!-- Pagination -->
+    <div class="bottompagination">
+      <span class="navigation" role="navigation">
+          {% include pagination.html %}
+      </span>
+    </div>
+  </div>
+</section>

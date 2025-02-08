@@ -14,9 +14,12 @@ post_class: post-template
 		<!-- Post -->        
         {% assign author = site.authors[page.author] %}
         
-		<div class="col-sm-8">
+		<div class="col-md-12">
+
+                <!-- Post Title -->
+				<h1 class="posttitle">{{ page.title }}</h1> 
             <!-- Post Featured Image -->
-			{% if page.image %}<img class="featured-image img-fluid rounded" src="{{ site.baseurl }}/{{ page.image }}" alt="{{ page.title }}">{% endif %}
+			{% if page.image %}<img class="featured-image img-fluid" src="{{ site.baseurl }}/{{ page.image }}" alt="{{ page.title }}">{% endif %}
 			<!-- End Featured Image -->
 			<div class="mainheading">             
                 
@@ -33,8 +36,6 @@ post_class: post-template
                 </div>
                 <!-- End Categories -->
                 
-                <!-- Post Title -->
-				<h1 class="posttitle">{{ page.title }}</h1> 
                 
 			</div>
 
@@ -56,6 +57,20 @@ post_class: post-template
                 </small>
             </p>
             
+
+
+             <!-- Author Box -->
+             {% if page.author %}				
+             <div class="row post-top-meta">
+                 <div class="col-md-2">
+                     <img class="author-thumb" src="{{site.baseurl}}/{{author.avatar}}" alt="{{ author.display_name }}">
+                 </div>
+                 <div class="col-md-10">
+                     <a target="_blank" class="link-dark" href="{{ author.web }}">{{ author.display_name }}</a><a target="_blank" href="{{ author.twitter }}" class="btn follow">Follow</a>
+                     <span class="author-description">{{ author.description }}</span>						
+                 </div>
+             </div>				
+             {% endif %}        
 			
             
             <!-- Prev/Next -->
@@ -73,46 +88,11 @@ post_class: post-template
             </div>
             <!-- End Prev/Next -->
             
-            
-             <!-- Author Box -->
-                {% if page.author %}				
-				<div class="row post-top-meta">
-					<div class="col-md-2">
-						<img class="author-thumb" src="{{site.baseurl}}/{{author.avatar}}" alt="{{ author.display_name }}">
-					</div>
-					<div class="col-md-10">
-						<a target="_blank" class="link-dark" href="{{ author.web }}">{{ author.display_name }}</a><a target="_blank" href="{{ author.twitter }}" class="btn follow">Follow</a>
-						<span class="author-description">{{ author.description }}</span>						
-					</div>
-				</div>				
-                {% endif %}
-            
-            
-            <!-- Begin Comments
-            ================================================== -->
-            <section>
-            <div id="comments">                          
-                {% include disqus.html %} 
-            </div>
-            </section>
-            <!--End Comments
-            ================================================== -->
-            
+                     
             
 
 		</div>
 		<!-- End Post -->
-
-
-        
-
-		<!-- Sidebar -->
-        <div class="col-sm-4">
-            {% include sidebar.html %}
-            </div>
-        
-        
-
 	</div>
 
 <!-- End Article
